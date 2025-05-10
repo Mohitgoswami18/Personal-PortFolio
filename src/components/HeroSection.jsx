@@ -23,7 +23,7 @@ function HeroSection( { contact }) {
     >
       <div className="max-w-full flex text-center items-center gap-4 justify-center">
         <div 
-          className="p-8 " 
+          className="md:p-8" 
         >
           <motion.h1 
             className="text-[#EAF0F7] text-2xl md:text-4xl font-bold tracking-wider"
