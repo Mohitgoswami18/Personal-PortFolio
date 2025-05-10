@@ -68,7 +68,6 @@ const projects = {
       tag: 'Advanced',
       skillTag : ['C++','DSA','Graph'],
     },
-    // Add more advanced projects
   ],
 };
 
@@ -80,18 +79,18 @@ const ProjectSection = () => {
   const [activeTab, setActiveTab] = useState('basic');
 
   return (
-    <div ref={ref} div className='font-[Poppins] ml-10 px-4'>
+    <div ref={ref} div className='font-[Poppins] md:ml-10 px-4'>
       <div className='p-6 mt-60  font-[Poppins] w-full'>
         <motion.h1
         initial={{opacity:0, scale:0.99,y:-10}}
         animate={inView ? {opacity:1, scale:1, x:0, y:0} : {}}
         transition={{duration:1}} 
-        className='ml-55 font-bold text-5xl text-blue-500'>Projects</motion.h1>
-        <div className='flex mt-3 items-center ml-40 justify-evenly max-w-[500px] mx-auto gap-5'>
+        className='md:ml-55 ml-15 font-bold text-5xl text-blue-500'>Projects</motion.h1>
+        <div className='flex mt-3 items-center md:ml-40 justify-evenly max-w-[500px] mx-auto gap-5'>
           <motion.h1
           initial={{opacity:0, scale:0.9,}}
           animate={inView ? {opacity:1, scale:1, x:0, y:0} : {}}
-          transition={{duration:1}}  className='cursor-pointer basis-25%] hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] text-[#C9D1D9] text-lg font-bold top-30 left-35 mt-2'
+          transition={{duration:1}}  className='cursor-pointer basis-[25%] hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] text-[#C9D1D9] text-lg font-bold top-30 left-35 mt-2'
           >DSA</motion.h1>
           <div className='w-1 h-8 bg-[#C9D1D9]'></div>
           <motion.h1
@@ -103,11 +102,11 @@ const ProjectSection = () => {
           <motion.h1 
           initial={{opacity:0, scale:0.9,}}
           animate={inView ? {opacity:1, scale:1, x:0, y:0} : {}}
-          transition={{duration:1}} className='cursor-pointer basis-[39%] hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] text-[#C9D1D9] text-lg font-bold top-30 left-35 mt-2'
+          transition={{duration:1}} className='cursor-pointer md:basis-[39%] hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] text-[#C9D1D9] md:text-lg font-bold top-30 left-35 mt-2'
           >Machince Learning</motion.h1>
         </div>
       </div>
-      <div className="text-white p-6 mt-2 mx-auto ml-40">
+      <div className="text-white p-6 mt-2 mx-auto ml-2 md:ml-40">
         <div className="flex gap-4 mb-6">
         <motion.button
 
@@ -150,7 +149,7 @@ transition={{duration:1}}
           </motion.button>
         </div>
 
-        <div className="grid grid-cols-3 ml-[-300px] mt-5 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 pt-4 md:ml-[-300px] mt-5 gap-2">
           {projects[activeTab].map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

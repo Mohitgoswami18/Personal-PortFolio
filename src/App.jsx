@@ -21,7 +21,7 @@ function App() {
         <Navbar aboutMe = {aboutMe} skills = {skills} projects = {projects} home = {home} contact = {contact}/>
         <div ref={home}><HeroSection contact = {contact} /></div>
       </div>
-      <div className='ml-60'>
+      <div className='p-3 md:ml-60'>
         <div ref={aboutMe}><Introduction/></div>
         <div className='' ref={skills}><Skills /></div>
         <div ref={projects}><Projects /></div>
