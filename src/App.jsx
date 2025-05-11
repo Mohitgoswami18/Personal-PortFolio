@@ -19,13 +19,13 @@ function App() {
     <div className='bg-[#0A0F1C] w-full'>
       <div className='flex'>
         <Navbar aboutMe = {aboutMe} skills = {skills} projects = {projects} home = {home} contact = {contact}/>
-        <div ref={home}><HeroSection contact = {contact} /></div>
+        <div className='bg-[#0A0F1C] mx-auto' ref={home}><HeroSection contact = {contact} /></div>
       </div>
-      <div className='p-3 md:ml-60'>
-        <div ref={aboutMe}><Introduction/></div>
-        <div className='' ref={skills}><Skills /></div>
-        <div ref={projects}><Projects /></div>
-        <div ref={contact}><Contact /></div>
+      <div className='md:p-3 md:ml-60'>
+        <div className='w-full bg-[#0A0F1C]' ref={aboutMe}><Introduction/></div>
+        <div className='w-full bg-[#0A0F1C]' ref={skills}><Skills /></div>
+        <div className='w-full mx-auto bg-[#0A0F1C]' ref={projects}><Projects /></div>
+        <div className='w-full bg-[#0A0F1C]' ref={contact}><Contact /></div>
       </div>
     </div>
   )

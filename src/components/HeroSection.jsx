@@ -19,7 +19,7 @@ function HeroSection( { contact }) {
       initial={{ opacity: 0, scale: 0.8, y:40 }} 
       animate={inView ? { opacity: 1, scale: 1 } : {}} 
       transition={{ duration: 1.2 }}
-      className="max-w-[1080px] mt-50 md:mt-32 h-screen md:ml-90 font-[Poppins]"
+      className="mx-auto md:max-w-[1080px] mt-52 md:mt-32 h-screen md:ml-40 font-[Poppins]"
     >
       <div className="max-w-full flex text-center items-center gap-4 justify-center">
         <div 

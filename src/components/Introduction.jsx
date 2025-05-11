@@ -16,10 +16,10 @@ function Introduction() {
   return (
     <motion.div 
       ref={ref}
-      initial={{ opacity: 0, scale: 0.8,x:50 }}
+      initial={{ opacity: 0, scale: 0.8,x:20}}
       animate={inView ? { opacity: 1, scale: 1, x:0 } : {}}
       transition={{ duration: 1 }}
-      className="flex p-2 md:p-6 h-screen gap-10 md:flex-row flex-col items-center font-[Poppins]"
+      className="flex p-2 w-[100%] md:p-6 h-screen gap-10 md:flex-row flex-col items-center font-[Poppins]"
     >
       {/* Profile Image */}
       <motion.div className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]  shrink-0">

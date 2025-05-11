@@ -20,7 +20,7 @@ function Skills() {
     })
 
     return (
-        <motion.div ref={ref} className='font-[Poppins] mt-10 md:mt-50 p-2 pt-10'
+        <motion.div ref={ref} className='font-[Poppins] mt-10 lg:mt-50 p-2 pt-10'
         initial={{scale:0.9, opacity:0}}
         animate={ inView ? {opacity:1, scale:1} : {}}
         transition={{ duration: 1}}
@@ -29,12 +29,12 @@ function Skills() {
             initial={{scale:0.8,x:-50, opacity:0}}
             animate={ inView ? {opacity:1, scale:1,x:0} : {}}
             transition={{ duration: 1 }}
-             className='font-bold text-4xl ml-35 md:text-5xl text-blue-500 md:ml-90'>Skills</motion.h1>
+             className='font-bold text-4xl lg:ml-[-90px] text-center lg:text-5xl text-blue-500'>Skills</motion.h1>
             <motion.div
             initial={{scale:0.8}}
             animate={ inView ? {opacity:1, scale:1} : {}}
             transition={{ duration: 1 }}
-             className='grid grid-cols-1 md:grid-cols-3 md:space-x-12 border-2 border-blue-500 p-2 md:p-8 max-w-[750px] mt-12 md:ml-16 cursor-pointer  text-[#C9D1D9] text-lg font-bold'>
+             className='grid grid-cols-1 lg:grid-cols-3 lg:space-x-12 border-2 border-blue-500 p-2 lg:p-8 max-w-[750px] mt-12 lg:ml-16 cursor-pointer  text-[#C9D1D9] text-lg font-bold'>
                 <div className=''>
                     <h1 className='text-center '>Coding</h1>
                     <div className='grid grid-cols-3 mt-12'>
@@ -46,19 +46,19 @@ function Skills() {
                 </div>
                 
                 <div className=''>
-                    <h1 className='text-center md:mt-0 mt-20'>Development</h1>
+                    <h1 className='text-center lg:mt-0 mt-20'>Development</h1>
                     <div className='grid grid-cols-3 mt-12'>
                         <SkillCard image={html} title="HTML" imageStyle = "w-21 p-4"/>
-                        <SkillCard image={css} title="CSS" imageStyle= "w-20 md:w-18 mt-1"/>
+                        <SkillCard image={css} title="CSS" imageStyle= "w-20 lg:w-18 mt-1"/>
                         <SkillCard image={js} title="JS" />
-                        <SkillCard image={tcss} title="tailwind css" imageStyle= "w-20 md:mt-4 mt-5"/>
+                        <SkillCard image={tcss} title="tailwind css" imageStyle= "w-20 lg:mt-4 mt-5"/>
                         <SkillCard image={react} title="React" />
                         <SkillCard image={firebase} title="Firebase" />
                     </div>
                 </div>
 
                 <div className=''>
-                    <h1 className='text-center mt-30 md:mt-0'>Machine Learning</h1>
+                    <h1 className='text-center mt-30 lg:mt-0'>Machine Learning</h1>
                     <div className='grid grid-cols-3 mt-12'>
                     <SkillCard image={python} title="python" />
                     </div>

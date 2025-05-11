@@ -7,7 +7,7 @@ function Navbar( { aboutMe, skills, projects, home, contact} ) {
   }
 
   return (
-    <div className='md:inline hidden fixed font-[Poppins] mt-8 ml-3 md:mt-48 text-[#C9D1D9] '>
+    <div className='lg:inline hidden fixed font-[Poppins] mt-8 ml-3 md:mt-48 text-[#C9D1D9] '>
       <ul className='flex md:flex-col md:space-y-6 items-start md:justify-start md:gap-0 gap-5 md:p-4 p-2 md:ml-4 '>
         <li className='group hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] flex items-center gap-2 cursor-pointer hover:text-white transition-colors'
         onClick={ () => VerticalScroll (home)}>
