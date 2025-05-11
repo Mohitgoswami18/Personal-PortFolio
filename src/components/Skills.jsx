@@ -20,7 +20,7 @@ function Skills() {
     })
 
     return (
-        <motion.div ref={ref} className='font-[Poppins] mt-10 lg:mt-50 p-2 pt-10'
+        <motion.div ref={ref} className='font-[Poppins] mt-10 lg:mt-50 p-6 pt-10'
         initial={{scale:0.9, opacity:0}}
         animate={ inView ? {opacity:1, scale:1} : {}}
         transition={{ duration: 1}}
